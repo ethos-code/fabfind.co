@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="author" content="FrappeDev@preetChaahal" />
+
+		<!--
+			stylesheets and scripts
+		-->
+		<link rel="stylesheet" href="assets/css/uikit.min.css" />
+        <script src="assets/js/jquery-v2.2.4.min.js"></script>
+        <script src="assets/js/uikit.min.js"></script>
+        <script src="assets/js/uikit-icons.min.js"></script>
+  		<link rel="stylesheet" type="text/css" href="assets/css/main-style.css">
+  		<!--
+  			//End of stylesheets and scripts
+  		-->
+		 		
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		
+		<div class="max-wd-1600">
+			<div class="uk-position-relative">
+			    <img src="assets/images/main-carousel.png" alt="">
+			    <div class="uk-position-top">
+			        <div class="uk-container uk-container-small">
+				        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+				            <div class="uk-navbar-left">
+				                <ul class="uk-navbar-nav">
+				                    <li><a href="index.html"><img src="assets/images/logo.png" class="uk-responsive-height" alt=""></a></li>
+				                    <li class="uk-hidden"><a href="#">Item</a></li>
+				                    <li class="uk-hidden">
+				                        <a href="#">Parent</a>
+				                        <div class="uk-navbar-dropdown">
+				                            <ul class="uk-nav uk-navbar-dropdown-nav">
+				                                <li class="uk-active"><a href="#">Active</a></li>
+				                                <li><a href="#">Item</a></li>
+				                                <li class="uk-nav-header">Header</li>
+				                                <li><a href="#">Item</a></li>
+				                                <li><a href="#">Item</a></li>
+				                                <li class="uk-nav-divider"></li>
+				                                <li><a href="#">Item</a></li>
+				                            </ul>
+				                        </div>
+				                    </li>
+				                </ul>
+				            </div><!-- //uk-navbar-left -->
+				            <div class="uk-navbar-right">
+				            	<ul class="uk-navbar-nav">
+				            		<li><a href="index.html"><span class="uk-margin-small-right color-white" uk-icon="icon: sign-in"></span></a></li>
+				            	</ul>
+				            </div><!-- //uk-navbar-right -->
+				        </nav>
+			        </div><!-- //uk-container -->
+			        <div class="uk-h4 uk-text-center jumbotron font-gtWalsheimProRegular">
+						<p class="color-white">The fastest way to compare<br>and buy prefab homes.</p>
+					</div><!-- //uk-h4 -->
+			    </div>
+			</div>
+		</div><!-- //max-wd-1600 -->
+
+		<div class="uk-section-muted">
+			
+			<div class="max-wd-1600">
+				<div class="uk-container uk-container-small">
+					<form uk-grid class="search-bar-form">
+					    <div class="uk-width-1-2@s uk-padding-small">
+					        <div class="uk-inline display-block">
+							    <span class="uk-form-icon color-dark" uk-icon="icon: search"></span>
+							    <input class="uk-input no-border font-gtPressuraMonoLight color-dark font-small font-bold" type="text" placeholder="Find you fab">
+							</div>
+					    </div>
+					    <div class="uk-width-1-4@s uk-padding-small">
+					        <select class="uk-select no-border font-gtPressuraMonoLight color-dark font-small font-bold">
+				                <option>Manufacturers</option>
+				                <option>Distributers</option>
+				            </select>
+					    </div>
+					    <div class="uk-width-1-4@s uk-padding-remove-horizontal">
+					        <button class="uk-button uk-button-default no-border font-gtPressuraMonoLight text-capitalize color-dark font-small font-bold primary-blue  uk-padding-small search-btn">Search</button>
+					    </div>
+					</form>
+				</div><!-- //uk-container -->
+			
+				<div class="uk-container uk-container-small">
+					<div class="uk-section">
+					    <div class="uk-container icons-wrap">
+
+					        <div class="uk-grid-match icon-grid uk-child-width-1-4@m" uk-grid>
+					            
+					            <div>
+					                <div class="uk-padding-small border-white">
+						                <div class="uk-width-large">
+										    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAjBJREFUeNrs21txg0AUgOGtAyREQiQgoQ6KBCTgoBKQEAmVkDhAAhIozNCXzl5gs7scOP83w1Mnactf9kKJMQAAAAAAAAAAAAAAwOaDUxBUzce90Pd6cbrDhvmYCh0jV0jYxJAlSzMfXycfChGwhHg6hi0cEGP0zCM4OEY3Hz8EkRGjWb9GkMI+PTEIcsAqbfLEIMiBMcb1ajEEkRHDte8gSGbdjhgEyazfGYMgBWMsu/HbhtcRpFCMauNrCZJQ9e+E7o1BkMQxnm/GIEjGGH1EDIJkjBGLIG9YlrBDwhgEeTPGmDgGQRLGaBK9N0EExSDITo0J3z4nyIViECQyxpabhAS5QAyCBPSFYyzqNUrH6ffHGAxPF4qJEXOT8JS+18uzFvLzVFpj2P5v0B/8i6e6fX7KGK6Hi8dMa/uYn+mhIYbtSW/bh2CWq+d2YIzeKOB6uHjRGvtT4LmXfjetMWoTviFXrcPEZLmC6kJ/ICpiNDvnidoxjKUc031XK7cdHON655j02wwxGg0xUtx2uFuWx3+TfsyuuSZGmvW8b9KvIq9WFTFSPCjme+/YSd82dNYaYqR6Nik07OyZ9GPnsctt+PrM8bdM+p3WGEctIX2T/kNjDCmrFtekv/ejAKo2fCXmsIcjRqUxxl3QVTtoitGbc4zNl1/W5tjwQeCGD0I3fBC44YPQDR+EbvggcMOnWmsU3v+RjBhCg7DHEDSZt8QAAAAAAAAAAAAAAACS/QowAP3D7Gz7HUbhAAAAAElFTkSuQmCC" alt="Image" class="uk-align-center">
+										</div>
+						                <div class="uk-text-center font-small color-dark font-bolder">Trending</div>
+						            </div><!-- //uk-padding-small -->
+					            </div>
+
+					            <div>
+					                <div class="uk-padding-small border-white">
+						                <div class="uk-width-large">
+										    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABNZJREFUeNrsXY110zAQvvZ1ADMB3gBvgLqBN6g3wJ0Ab2CYwDBBYIKGCQITJEzQMEGI4FRfXDdxbUU/zve9pxe//kTSfbo73UmyiOaB3b48zKEj1wSAkB6k+5J4bkO5LxmGBFHBJqfyaLJS/o4VNIRoyZ93HtuQd9py8VjxCM08acjU+meHkgXSeCDEmKs1aGiRsFAePRBSWfBhs8SCBVM4JmTN/5+CgueOdcfEuCIkC2V2FSoeWUCvjUnSkSO85vrKOQqz5tE9JcBrHAvIlrmqR2q2k6lrM+E7Uu6Yq+mnskB+ISYkSUiEJMLkXMqMRXF/d/wcHDJBSj5zMmRfi5AbKlV4rpFvYslEO3XwJvpNZkjIA0W4BrOY6Ry/Ef1KYlXruczz89jNccpqPRdfkrDmKwIAAACAyFBcQMTtI8Kvxv7zTgRAWG+ePkNraGLuS1GbojZpggSyfTUqavNejzbiMutfeCHIOwO6tjmguyq3RoB0MiB2YvKzTmUg5TkZctDmLtVxQfApfWgI24oAAAAAAACA4FBgmhoWTKDrHTiFGxiuRbivEHX/SwvpBOCa3J8X0fLPbkSor/h5uy8/ufzalw35PwypRLtsIxEDcdWp88uZSE/58z29cJSiYFJk0rBb1uRvD6tsx4rbqZ1wyYIbM5pzOsxemz5WZ9COjNo9an1F/07nBaurASy+E8/3+/LJMRm67g9cvzrxtz9Zk36wZm/Ez8x36UF1J4S+FRpydUZTuBJt+iHadqD1VxQXzEzoloWoO/pW+MBTZMk1CW2Gv7JZ2kUqjyAI2Z3wB4q1YPGC2e0zSae+F5hASNljr5sTGgRCLBPS56BXrCmJBaKBAYJL2fzITQSPHEekljUPOCG47vR8QdPWrkGIpZihtBQzgJCB8UfdY5Iasr+lBoQcmSUVPSbp4RUOGoRYimQbandHnjONAUIGoOjEDK533AdDSCipAmOqdBpjS23OaUmvzzQXR7SqOkJI0KkTk4Io2bEam+5qk7Wi8a/oOJax9qUhmfCFZlej6hs4N2JaafLz2QvOc0tt1jQG3Irnmvyfb9nSYfrmo/i5yfr+vhENlmxpM7HRfyCeN5H5pWVHGD6hhf2G2gy1XNZQojxpyD1/bug8q3JAOzD6/GLK5WkJ9xtk5RXGAi2x6yQwgBAQAsQIdSSWGFqGxiZD4hRoCAAAADB7x7sgvMS+C/PWucJVhSkdbkLDazYOkdHhViR1TuYrOnznSQH5v2g95Ga9xrYl0YKXmw0qwlmSoXKTA3iy3FQnqILPGG9ZrBzrcGILLwRd3ztKnjWc9tlmpwAAAAAQ3ZRvNaMAMuNpa7SvzI3qFpqBgZ4J8qKLx6K9+GSO/SpjHkkDzXA0mp+LaHTOl4JFcUVgNFfJXUJfE2ozwvWFzCKlkw/OGpis8NQ8TUnusso5TV/XqSjQq1cbSzMPl/eb27q+21bfg7TLYwWkaNwCEC64P4Ip95sbk6lGmpwa4rc7WquRhKTUruR5R0hbSRULRx8Y2jisV9e1pGHv3LooQu7487OHur922gCIIGvsTGWsyTIxVBBT11A0JGdB6KN1Pg5o6jq/cBtyEPL/OLbGd49t+C6cvDfcBEKI9ht/yO/hU133Lfl/R/FsMMWHBAOcoAoMfwUYAEt+3t6qMM2kAAAAAElFTkSuQmCC" alt="Image" class="uk-align-center">
+										</div>
+						                <div class="uk-text-center font-small color-dark font-bolder">Newest</div>
+						            </div><!-- //uk-padding-small -->
+					            </div>
+					            <div>
+					                <div class="uk-padding-small border-white">
+						                <div class="uk-width-large">
+										    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABGNJREFUeNrsXYtx2kAQPTwUoA6iDkwHwRWEVGClApMKjCsgqYB0QDowHQhXAK4AOkik+BTvnE+gz+7qDt6b2YHRAKfbt9+7A4wBAAAAAAAAgDrMCplDDeHgj5Vp7BO5AZcgBAAh8WBEnq8KSSOdR5U7toUcI7z/8p6/lY8jJzECw+GukM2YXPhayCTSyTzax1+FvEbqIRuUvUjqAAi5IkLSiHOOJNIhqtWkkENAcTuUHJKSe5loesjMkkIrHMCYjDx/0Bx4RyyhszVcmIfQqFFJquEhmWegBzjHP70kJzxGDM+W/dJLln2s4cI8pIoapX5W9vnBQxIrpmTycyeJLa+YkIzcw8yjJzH4mFezhoAJoVHj1DWxkm5Brk+0rCFQQqg3ZDVek0l6hy9fiFtDwISsT0QImlfESrpVTV8iag2BElIXNXxewnpviwY9R2UN+RURQqNGcsaQ11IlXZNKY3oFhJyLGj5jZmkN3JLuFESsIVBCmiqahrUVx8B5i4TNbg0BE3JokbDZWoNpy2SdcFtDoIS0Dc/nkn/rhufAmOgugZBdhzK/iy5ZWGWzhkAJaRs1+r6PxdLXfa0hYEL6NMG7ru/tmwt6W0OghPT1/s6tAUe1lBu95RQtQjiqpTbVGWt32aZ/iYEQrn6itbFzdtxii2sDEMLVYzXt8D8oMWeexCRiQlorsUXBdJJc7lVb7okMRUjGPEbj4kBiX0Nj312aEInQuz5XINBSlXPnT6NRlCQkEyrhz7YGknvj0vvukoRI7obWfja1YonTI1LeJ02IdINb630acV7S0qQI0ThR8yE/aVVCkvvuEoRo5D5jI8b/+x/bCxX7L4KVytFKOda9efv6Wcigh8j3gnrZk+f31GW0ZRK4hxyG0MuNGe5MbhK4hwxyfzfEZZ7M2/fWJeXOxIfvmnqhhNwqTI564zZwIiq9fFIYa0oJ2boXBfGZTDb0X1wYQi8btxyV3reQKq8lknpmdI40pb6mufUuVs8JTiMgROtI08JH/EJ4PSgxPTb4A+jUpfZz0jpnoN36zsgtLkoRLvXZVGG5gF6eTxFOcwnn4DRUSZ35lSR7LhS6qJEum7yIg5S5EMmahBjzvpkksYWbt3nxruMkE2cSBxP/nnruKLHLfFInTDU20pWzxrIyzQ8VL5x1oFxheUbj1IlrZJVe0oZ6cXXqJWN0JvYvnTftbfPyQhqn1MoXj9X8sEsyRwVCjF2C2AiPVYbhR0cvWzvuK9HLxHb5U49enkzHJf3EY/FNZG10v6uhffrdZ/FNhO13LRPrMSsnltJcszbvPyagjaG+SlfpZW382xhUL6Gvbl8EIezAL8qBEACEgBAAhIAQAISAEACEgBAAhAAgBIQAIASEACAEhAAgBIQAIIQZ1T987kEpwIqR4ljlYbGYj8JsLol4erI+VlH5Kw6tHHJEMAIAINykXibwR3PZ51l/FvKb+0PHgkl8dgUGHQ0h5Y3eXoGHAAAAAAAA+PFXgAEAzRO3Z3YDKjAAAAAASUVORK5CYII=" alt="Image" class="uk-align-center">
+										</div>
+						                <div class="uk-text-center font-small color-dark font-bolder">Economical</div>
+						            </div><!-- //uk-padding-small -->
+					            </div>
+					            <div>
+					                <div class="uk-padding-small border-white">
+						                <div class="uk-width-large">
+										    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA6pJREFUeNrsnY1t2zAQRi9FBvAI6gRxJ7C8QTJB1A3SCepOEGcCOxM0G9iZIOoEVieQOkEq1gxK0z8QKZkUrPcBBGIjBJl74vF4JBWR+BpLPzSqSyID18+6vNdlow0SS7e6H6pkQwbybpQ0Yj9mRj9WMQ3ySVCvBBCAIIAABAHkQnRtxeIxF2n3EUPfifFzosPgkFrWpTC/eLTWBJTwRQ0IudIr5BJnEV3rukyvD7ipvC5VoE6kkdq1lcj/PFal+xK63R2jxEphDD11stcuURZhLwIIQBBAAIIuEUhx5OfQqnrSj51cVgxNZbuHvY5siLmGorIWyyEDKSR8Iu+Yln3oBHMIcwgCCEAQQACCAAIQBBCAoD7pUOpkhVnijpAcM/QLSIIZ+uWy7Ktky7r8xjRBpI6wpvaX6ou+nI8ammbCuSzCXgQQgCCAAAQBBCAIIAggAwOicmOZbF+9VBqpgY3+LsPsp5VKd7msBwvCsbIRcmZKMzljLmsh2/vuTV5ElugOzGCyq+sOYdiuqKjLs2w3wBSkG9lejk+M3/ku21Pnc1B057Iyq36pDd9kmH6U8UBtv+eyugBSWjDGHhBXAOlmDsmsOeObNNujX1puKhW2kjsJeyfWnLF0qPtkfb4FR/tJ3XyqXxzrKoBrw0XeNKz36DHnFHr0Vo6j/96xnUq3U8QCYs43fzzqF0fgnnoAHjz7+qwfAHEA7/Mu4V9twvm2LqtoWX/k0Z7vG4Nc6+WB2ul0hBTGk33jUd90Pa8N60w95pu1h4HvPEaj6zzaOZDccFupfuKbPiF2ZFU4tBnitGUVI5PQ1mU9W+7n0dFHm3/8i6DWQHJroswaDvOF5a6eJN7b5C4udTKW/Qzv6khoqnz/m+xnfkcDtf3eSr2L5GKuY++FBflNzwuFAW50wE/fMTq6m9TNVEiloYysdUNyIiK5E65DdDqHiLVS/9wg7FPgftTlCzDON0JMY3/VLiyVw6+gJZoKCMQOYzF+RJeFAAIQBBCAIIAggAxgHZKKe2LyxWO1rhabrhtUPgtSlQIKvkH1Yci2Z3vH4vdvfkpxz/SWnm25HoxYebbjAnEmZzrbO2pRz6Vu0rIt14cspC06dVlrPVQTD1dSOLqEufgdA1o71lH5OJ9jQL1wWchPZ3NZiLAXIAggAEEAQQABCAIIQBBAAIIAAhAUU4f2Q9QeQIppgmhyCIh9NyPDTnFdVqhLlOi0/t1CvtIfPi5sJtglGowZZuih/gowALeHfTzMogtQAAAAAElFTkSuQmCC" alt="Image" class="uk-align-center">
+										</div>
+						                <div class="uk-text-center font-small color-dark font-bolder">Timeline</div>
+						            </div><!-- //uk-paddng-small -->
+					            </div>
+
+					        </div><!-- ///uk-grid-match -->
+
+					    </div><!-- //uk-container -->
+					</div><!-- //uk-section -->
+				
+				</div><!-- //uk-container -->
+
+				<div class="uk-container uk-container-small uk-padding">
+				    <div class="uk-container">
+
+				        <div class="uk-grid-match icon-grid uk-child-width-1-2@m" uk-grid>
+				            
+				            <div>
+				                <div class="uk-padding-small bg-light">
+					                <div class="uk-width-large uk-padding-small">
+									    <h5 class="color-orange font-bold">Trending Featured Blog</h5>
+									    <div class="uk-background-secondary uk-light" style="height: 300px;"></div>
+									    <h2 class="color-white font-bold">Conversion to Tesla solar tiles</h2>
+									</div>
+					            </div><!-- //uk-padding-small -->
+				            </div>
+				            <div>
+				            	<div class="uk-grid-match icon-grid uk-child-width-1@m" uk-grid>
+				            
+						            <div>
+						                <div class="uk-padding-small bg-light">
+							                <div class="uk-width-large uk-padding-small">
+											    <h5 class="color-orange font-bold">Featured Fab</h5>
+											    <div class="uk-background-secondary uk-light" style="height: 100px;"></div>
+											    <h4 class="color-white font-bold">Bert's Box</h4>
+											</div>
+									   	</div><!-- //uk-padding-small -->
+								    </div>
+						            <div>
+						                <div class="uk-padding-small bg-light">
+							                <div class="uk-width-large uk-padding-small">
+											    <h5 class="color-orange font-bold">Featured Manufacturer</h5>
+											    <div class="uk-background-secondary uk-light" style="height: 100px;"></div>
+											    <h4 class="color-white font-bold">Turkel Design</h4>
+											</div>
+
+							            </div><!-- //uk-padding-small -->
+						            </div>
+
+						        </div><!-- ///uk-grid-match -->
+				            </div>
+				        </div><!-- ///uk-grid-match -->
+
+				    </div><!-- //uk-container -->
+				
+				</div><!-- //uk-container -->
+
+			</div><!-- max-wd-1600 -->
+
+		</div><!-- //bg-grey -->
+		<div class="uk-clearfix"></div>	
+		
+		<div class="bg-gray-light uk-padding-large uk-padding-remove-bottom">
+		    <div class="uk-container uk-container-small">
+
+		    	<div class="max-wd-1600">
+			        <div class="uk-grid-match icon-grid uk-child-width-1-2@m" uk-grid>
+			            
+			            <div>
+			                <div class="uk-width-large">
+							<img src="assets/images/lead-actor.png">
+							</div>
+			            </div>
+
+			            <div>
+			                <h2 class="font-bolder color-dark font-gtWalsheimProRegular uk-text-center">Share your dream<br>with our team</h2> 
+						   	<p class="font-bold color-dark">We're prefab fanitics and local market experts – and we're here to help make building your prefab home stress-free.</p>
+						   	<div style="text-align: center;">
+						   		<button class="uk-button uk-button-default font-bold color-dark action-btn uk-button-large font-gtPressuraMonoLight">Build Your Profile</button>
+			            	</div>
+			            </div>
+			            
+
+			        </div><!-- ///uk-grid-match -->
+			    </div><!-- //max-wd-1600 -->
+
+		    </div><!-- //uk-container -->
+		</div><!-- //bg-gray-light -->
+
+		<div class="primary-blue uk-padding-large uk-padding-remove-bottom">
+
+	    	<div class="max-wd-1600">
+	    		
+	    		<div class="uk-container uk-container-small">
+				    <div class="uk-container">
+
+				        <div class="uk-grid-match icon-grid uk-child-width-1-2@m" uk-grid>
+				        	<div class="font-bold color-dark fix-later">
+				        		<div class="uk-margin" uk-margin><p>Be the first to know!  Join the Fastfab Insider</p></div>
+				        	</div>
+				        	<div>
+				        		<form>
+				        			<div class="uk-margin" uk-margin>
+								        <div class="">
+								            <input class="uk-input uk-form-width-medium no-border font-gtPressuraMonoLight color-dark font-small font-bold" type="text" placeholder="email@example.com">
+								        	<button class="uk-button uk-button-default font-gtPressuraMonoLight color-dark font-small font-bold">Subscribe</button>
+								        </div>
+								        
+								    </div>
+				        		</form>
+				        	</div>
+
+				        </div>
+				    </div><!-- //uk-container -->
+				</div><!-- //uk-container -->
+
+	    	</div>
+		   	
+		</div>
+
+		<div class="primary-blue uk-padding-small"></div>
+
+
+	</body>
+</html>
